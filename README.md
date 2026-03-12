@@ -4,7 +4,7 @@ Esta é uma API RESTful desenvolvida como desafio para a Knex. O sistema gerenci
 
 ## Tecnologias Utilizadas
 
-- **Node.js** & **TypeScript**
+- **Node.js** e **TypeScript**
 - **Express** (Framework Web)
 - **Knex.js** (Query Builder)
 - **SQLite3** (Banco de Dados em arquivo)
