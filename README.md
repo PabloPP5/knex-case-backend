@@ -40,3 +40,23 @@ PORT=3000
 npm run dev
 ```
 A API vai estar disponível em http://localhost:3000
+
+## Documentação da API (Endpoints)
+
+### Autenticação e Usuários
+- **POST `/users/register`**: Cria um novo usuário.
+  - Body: `{ "name": "...", "email": "...", "password": "...", "company_id": 1 }` (company_id 1 para Apple, 2 para Samsung ou null para Consumidor).
+- **POST `/users/login`**: Gera o token de acesso.
+  - Body: `{ "email": "...", "password": "..." }`
+  - Retorno: `{ "token": "..." }`
+
+### Produtos
+- **GET `/products`**: Lista todos os produtos com o nome da empresa vinculada.
+- **POST `/products`** (Requer Token): Cadastra um produto.
+  - Body: `{ "name": "...", "price": 100 }`
+- **PUT `/products/:id`** (Requer Token): Atualiza um produto.
+  - *Regra: O token deve pertencer à mesma empresa do produto.*
+
+### Transações
+- **POST `/transactions`** (Requer Token): Registra a compra de um item.
+  - Body: `{ "product_id": 1 }`
