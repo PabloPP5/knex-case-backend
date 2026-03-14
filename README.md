@@ -23,7 +23,7 @@ Esta é uma API RESTful desenvolvida como desafio para a Knex. O sistema gerenci
 
 ### 1. Clonar o repositório
 ```bash
-git clone [https://github.com/SEU_USUARIO/knex-case-backend.git](https://github.com/SEU_USUARIO/knex-case-backend.git)
+git clone [https://github.com/PabloPP5/knex-case-backend.git](https://github.com/PabloPP5/knex-case-backend.git)
 cd knex-case-backend
 ```
 ### 2. Instalar dependências
