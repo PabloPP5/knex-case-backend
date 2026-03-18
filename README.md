@@ -45,7 +45,7 @@ A API vai estar disponível em http://localhost:3000
 
 ### Autenticação e Usuários
 - **POST `/users/register`**: Cria um novo usuário.
-  - Body: `{ "name": "...", "email": "...", "password": "...", "company_id": 1 }` (company_id 1 para Apple, 2 para Samsung ou null para Consumidor).
+  - Body: `{ "name": "...", "email": "...", "password": "...", "companyId": 1 }` (companyId 1 para Apple, 2 para Samsung ou null para Consumidor).
 - **POST `/users/login`**: Gera o token de acesso.
   - Body: `{ "email": "...", "password": "..." }`
   - Retorno: `{ "token": "..." }`
